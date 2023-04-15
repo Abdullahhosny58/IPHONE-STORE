@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative ;    
+}
+/* @media (max-width:500px) {
+.container{
+
+}
+} */
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    width: 40px;
+
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+@media (max-width:500px) {
+    ul li {
+        margin: -9px;
+            font-size: small;
+            font-weight: 600;
+
+    }
+}
+ul li a{
+color: #fff;
+text-decoration: none;
+margin: 0 10px;
+
+}
+ul li a:hover {
+    transform: scale(1.2);
+    
+        color:rgb(85, 0, 141);
+        transform: translateX(-50%);
+    
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+@media (max-width:500px) {
+.content {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+height: 450px;
+}
+
+}
+
+
+.content .text {
+    width: 40%;
+    color: #fff;
+}
+@media (max-width:500px) {
+.content .text h2{
+font-size: 20px !important;
+margin-bottom: 30px;
+padding-right: 2px;
+
+}
+}
+
+.content .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p {
+    font-size: 18px;
+    margin: 20px 0;
+
+}
+@media (max-width:500px) {
+.content .text p {
+    display: none;
+}
+}
+.content .text a {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+@media (max-width:500px) {
+    .content .text{
+        width: 50%;
+    }
+}
+.content .image {
+    width: 30%;
+}
+
+.content .image img {
+    width: 210px;
+}
+@media (max-width:500px) {
+    .content .image img{
+        width: 140px;
+        margin-left: -30px;
+    }
+}
+.icons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+@media (max-width:500px) {
+    .icons{
+        height: 20%;
+    }
+}
+.icons img {
+    width: 40px;
+    transition: 0.5;
+    cursor: pointer;
+}
+@media (max-width:500px) {
+    .icons img{
+        width: 35px;
+
+    }
+}
+.icons :hover {
+    transform: scale(1.2);
+   
+ 
+}
